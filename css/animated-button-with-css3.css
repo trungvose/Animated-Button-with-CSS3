@@ -23,9 +23,9 @@ a {
     margin: 4px;
 }
 
-a::before, a::after, .btn::before {
-    font-family: 'FontAwesome';
-}
+    a::before, a::after, .btn::before {
+        font-family: 'FontAwesome';
+    }
 
 .main-background {
     background: #e7e7e7;
@@ -55,21 +55,17 @@ section {
     text-align: center;
 }
 
-    /*Important for button 1b and 1c*/
-    section > p {
-    }
+.color-1 {
+    background: #0090C0;
+}
 
-    section.color-1 {
-        background: #0090C0;
-    }
+.color-2 {
+    background: #c65133;
+}
 
-    section.color-2 {
-        background: #c65133;
-    }
-
-    section.color-3 {
-        background: #2ecc71;
-    }
+.color-3 {
+    background: #2ecc71;
+}
 
 
 /*End Common CSS*/
@@ -90,6 +86,7 @@ section {
     color: #fff;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -99,13 +96,12 @@ section {
         z-index: -1;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
 
 
 /*Button 1*/
-.btn-1 {
-}
 
 /*Button 1a - Change background on hover*/
 .btn-1a:hover {
@@ -132,7 +128,7 @@ section {
 
 /*Button 1c*/
 .btn-1c:after {
-    width: 0%;
+    width: 0;
     height: 100%;
     top: 0;
     left: 0;
@@ -164,6 +160,7 @@ section {
         -webkit-transform: translateX(-50%) translateY(-50%);
         -moz-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
     }
 
@@ -193,11 +190,11 @@ section {
         height: 100%;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
 
     .btn-2::before {
-        position: relative;
         -webkit-font-smoothing: antialiased;
         position: absolute;
         height: 100%;
@@ -206,6 +203,7 @@ section {
         font-size: 180%;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
 
@@ -216,18 +214,16 @@ section {
 /* Button 2a */
 .btn-2a::before {
     content: '\f019';
+    left: 0;
+    top: -100%;
 }
 
 .btn-2a:hover span {
     -webkit-transform: translateY(300%);
     -moz-transform: translateY(300%);
     -ms-transform: translateY(300%);
+    -o-transform: translateY(300%);
     transform: translateY(300%);
-}
-
-.btn-2a::before {
-    left: 0;
-    top: -100%;
 }
 
 .btn-2a:hover::before {
@@ -237,18 +233,16 @@ section {
 /* Button 2b */
 .btn-2b::before {
     content: '\f002';
+    left: -100%;
+    top: 0;
 }
 
 .btn-2b:hover span {
     -webkit-transform: translateX(200%);
     -moz-transform: translateX(200%);
     -ms-transform: translateX(200%);
+    -o-transform: translateX(200%);
     transform: translateX(200%);
-}
-
-.btn-2b::before {
-    left: -100%;
-    top: 0;
 }
 
 .btn-2b:hover::before {
@@ -258,18 +252,16 @@ section {
 /* Button 2c */
 .btn-2c::before {
     content: '\f013';
+    right: -100%;
+    top: 0;
 }
 
 .btn-2c:hover span {
     -webkit-transform: translateX(-200%);
     -moz-transform: translateX(-200%);
     -ms-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
     transform: translateX(-200%);
-}
-
-.btn-2c::before {
-    right: -100%;
-    top: 0;
 }
 
 .btn-2c:hover::before {
@@ -280,18 +272,16 @@ section {
 /* Button 2d */
 .btn-2d::before {
     content: '\f004';
+    left: -100%;
+    top: 0;
 }
 
 .btn-2d:hover span {
     -webkit-transform: translateX(-200%);
     -moz-transform: translateX(-200%);
     -ms-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
     transform: translateX(-200%);
-}
-
-.btn-2d::before {
-    left: -100%;
-    top: 0;
 }
 
 .btn-2d:hover::before {
