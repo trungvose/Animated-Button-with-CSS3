@@ -1,6 +1,6 @@
 ###Animated Button with CSS3
 **Demo**: 
-- http://trungk18.github.io/demo/animated-button-with-css3.html
+- http://trungk18.github.io/Animated-Button-with-CSS3
 - http://codepen.io/trungk18/pen/WxxLVd
 
 Today I will give some button effects to inspire you. The effects can be seen when hovering on some buttons. All of them are created by CSS Transition with popular and straight forward pseudo-element: *::before* and *::after*
